@@ -4,67 +4,115 @@
   <meta charset="UTF-8">
   <title>Spuren im Schatten - Geschichten zwischen Rhein, Bergischem Land und Eifel</title>
   <style>
+    /* Basis-Stile */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
+      background-color: #f9f9f9;
     }
+
+    /* Fixierte Menüleiste oben */
     nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
       background-color: #333;
-      padding: 10px 20px;
+      padding: 10px 0;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
     }
+
     nav ul {
-      list-style-type: none;
+      list-style: none;
       margin: 0;
       padding: 0;
-      overflow: hidden;
+      text-align: center;
     }
+
     nav ul li {
       display: inline;
-      margin-right: 20px;
+      margin: 0 20px;
     }
+
     nav ul li a {
       color: white;
       text-decoration: none;
       font-weight: bold;
+      font-size: 16px;
     }
+
     nav ul li a:hover {
       text-decoration: underline;
     }
+
+    /* Abstand nach oben wegen fixierter Leiste */
     .container {
       max-width: 900px;
-      margin: 20px auto;
+      margin: 100px auto 20px; /* 100px wegen Menüleiste */
       padding: 0 20px;
+      background-color: white;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
     }
+
+    /* Überschrift */
     h1 {
       text-align: center;
       margin-bottom: 20px;
+      font-size: 26px;
     }
+
+    /* Intro-Text */
     p.intro {
       text-align: justify;
       line-height: 1.6;
       margin-bottom: 30px;
+      font-size: 16px;
     }
+
+    /* Karte */
     iframe {
       width: 100%;
       height: 600px;
       border: 1px solid #ccc;
+      border-radius: 5px;
     }
+
+    /* Vollbild-Link */
     .fullscreen-link {
       display: block;
       text-align: center;
       margin-top: 10px;
+      font-weight: bold;
+      color: #333;
+      text-decoration: none;
+    }
+
+    .fullscreen-link:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive Anpassung */
+    @media(max-width: 600px) {
+      nav ul li {
+        display: block;
+        margin: 5px 0;
+      }
+      .container {
+        margin: 120px 10px 20px;
+      }
     }
   </style>
 </head>
 <body>
 
-  <!-- Menüleiste -->
+  <!-- Fixierte Menüleiste -->
   <nav>
     <ul>
       <li><a href="index.html">Startseite</a></li>
-      <li><a href="projekt1.html">Projekt 1</a></li>
-      <li><a href="projekt2.html">Projekt 2</a></li>
+      <li><a href="projekt1.html">Die Bergische Heideterrasse</a></li>
+      <li><a href="projekt2.html">Rheinisches Revier</a></li>
       <li><a href="projekt3.html">Projekt 3</a></li>
     </ul>
   </nav>
