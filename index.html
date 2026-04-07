@@ -65,21 +65,33 @@
       line-height: 1.6;
     }
 
-    /* 🔥 Kartenlayout mit Seitenbildern */
+    /* Kartenlayout */
     .map-section {
       display: flex;
       align-items: stretch;
       gap: 20px;
     }
 
+    /* 🔥 Seitenbilder mit Hover-Effekt */
     .side-image {
       width: 180px;
       object-fit: cover;
       border-radius: 8px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
+    .side-image:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+
+    /* Karte hervorheben */
     .map-container {
       flex: 1;
+      padding: 10px;
+      background: #fafafa;
+      border-radius: 10px;
+      box-shadow: inset 0 0 10px rgba(0,0,0,0.05);
     }
 
     iframe {
@@ -98,18 +110,8 @@
       color: #333;
     }
 
-    /* Zusatzbilder unten */
-    .extra-images {
-      margin-top: 30px;
-      display: flex;
-      gap: 20px;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    .extra-images img {
-      width: 300px;
-      border-radius: 8px;
+    .fullscreen-link:hover {
+      text-decoration: underline;
     }
 
     /* Responsive */
@@ -147,7 +149,7 @@
       Von den Bergischen Höhen über die längst vergangenen Heidelandschaften in die Niederrheinische Tiefebene, vom romantischen Mittelrhein bis in die niederländischen Höhen, vom Sauerland bis in die hohe Eifel, ob Sagen von Räuberbanden oder Elfen, ob politischer Kampf oder der Einsatz zur Rückkehr der Natur – diese Karte soll euch einen Einblick in die Region um den Rhein und das Bergische Land geben. Taucht ein und holt euch eure Inspiration für das nächste Mikroabenteuer.
     </p>
 
-    <!-- 🔥 Karte mit Seitenbildern -->
+    <!-- Karte mit Seitenbildern -->
     <div class="map-section">
       
       <!-- Links -->
@@ -169,12 +171,6 @@
       <!-- Rechts -->
       <img src="IMG_20240509_201734.jpg" class="side-image">
 
-    </div>
-
-    <!-- Zusatzbilder unten -->
-    <div class="extra-images">
-      <img src="IMG_20250309_120850.jpg">
-      <img src="20230924_193451.jpg">
     </div>
 
   </div>
