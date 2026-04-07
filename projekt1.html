@@ -35,9 +35,8 @@
       font-weight: bold;
       font-size: 16px;
     }
-    nav ul li a:hover {
-      text-decoration: underline;
-    }
+    nav ul li a:hover { text-decoration: underline; }
+
     .container {
       max-width: 900px;
       margin: 100px auto 20px;
@@ -46,46 +45,36 @@
       box-shadow: 0 4px 20px rgba(0,0,0,0.1);
       border-radius: 10px;
     }
-    h1 {
-      text-align: center;
-      margin-bottom: 20px;
-      font-size: 26px;
-    }
-    p {
-      text-align: justify;
-      line-height: 1.6;
-      margin-bottom: 20px;
-      font-size: 16px;
-    }
-    a {
-      color: #0066cc;
-    }
 
-    /* Bild rechts oben */
+    h1 { text-align: center; margin-bottom: 20px; font-size: 26px; }
+    p { text-align: justify; line-height: 1.6; margin-bottom: 20px; font-size: 16px; }
+    a { color: #0066cc; }
+
     .intro-image {
       float: right;
       width: 300px;
-      margin: 0 0 20px 20px;
+      margin: 0 0 5px 20px;
+      border-radius: 8px;
+    }
+    .highlight-image {
+      display: block;
+      margin: 30px auto 5px auto;
+      max-width: 100%;
       border-radius: 8px;
     }
 
-    /* Bild mittig */
-    .highlight-image {
-      display: block;
-      margin: 30px auto;
-      max-width: 100%;
-      border-radius: 8px;
+    /* Untertitel */
+    .caption {
+      text-align: center;
+      font-size: 12px;
+      color: #555;
+      margin-bottom: 20px;
     }
 
     @media(max-width: 600px) {
       nav ul li { display: block; margin: 5px 0; }
       .container { margin: 120px 10px 20px; padding: 20px; }
-      .intro-image {
-        float: none;
-        display: block;
-        margin: 0 auto 20px auto;
-        width: 80%;
-      }
+      .intro-image { float: none; display: block; margin: 0 auto 5px auto; width: 80%; }
     }
   </style>
 </head>
@@ -105,27 +94,28 @@
 <div class="container">
   <h1>Die Bergische Heideterrasse</h1>
 
-  <!-- Bild 1 -->
   <img src="IMG_20260404_160243.jpg" class="intro-image">
+  <div class="caption">Das Teilgebiet Ohligser Heide mit Heidelandschaften mit Moorbirken</div>
 
-  <p>Naturnahe Räume sind im Ballungsgebiet Rhein-Ruhr eine wahre Seltenheit. Zwischen den Großstädten Köln, Düsseldorf und Bonn ist wenig Platz um Wildnis noch eine Chance zu geben. So mancher guckt von hier neidisch in Richtung Lausitz oder Alpen, wo inzwischen Biber, Wolf und Geier vorkommen. Doch auch hier in NRW gibt es die Leuchttürme, die Hoffnungsschimmer, die Grünen Oasen.</p>
+  <p>Naturnahe Räume sind im Ballungsgebiet Rhein-Ruhr eine wahre Seltenheit…</p>
+  <p>Eine solche ist das Projekt der Bergischen Heideterrasse…</p>
+  <p>Die Bergische Heideterrasse zieht sich wie ein Band…</p>
 
-  <p>Eine solche ist das Projekt der Bergischen Heideterrasse. Die wenigsten werden wohl davon gehört haben. Was nicht verwunderlich ist, ist der Begriff doch jüngst geprägt als Definition für eine naturräumliche Haupteinheit. Doch damit ist auch im Volksmund viel mehr gemeint.</p>
-
-  <p>Die Bergische Heideterrasse zieht sich wie ein Band zu Füßen des Bergischen Landes am Übergang zur Niederrheinischen Tiefebene 80 km von Duisburg bis nach Siegburg. Nur wenige Kilometer breit verbindet sie über 25 Naturschutzgebiete. Die Landschaft ist geprägt von blühenden Heideflächen, sumpfigen Erlen- und Moorbirkenwäldern, artenreichen Feuchtwiesen und kleinen Weihern. Ob fleischfressende Pflanzen, Bergische Drachen, menschengroße Farne – die Bergischen Heideterrassen haben einiges zu bieten. Zwischen den Städten Düsseldorf, Leverkusen, Köln und Siegburg liegen hier bekannte Schutzgebiete wie die Ohligser Heide, der Königsforst, die Wahner Heide oder das Further Moor.</p>
-
-  <!-- Bild 2 -->
   <img src="IMG_20260404_155247.jpg" class="highlight-image">
+  <div class="caption">Wieder in der Ohligser Heide, charakteristische Erlenbruchwälder im Frühjahr</div>
 
-  <p>Aktuell gibt es Bemühungen, diese Landschaft wiederherzustellen und zu vernetzen. Sie wäre eine wichtige Verbindung zwischen verschiedenen Biotopen und könnte Rückzugsort für viele Lebewesen sein. Und es gibt viele Moore, eine Landschaft, die wir hier in NRW kaum mehr kennen. Zumindest nicht im Rheinland. Doch das Geld ist knapp, die Prioritäten liegen anderswo und auch im Naturschutz sind andere Flächen im Vorrang. Doch aus der Not kann man hier eine Tugend machen. Der BUND und die entsprechenden Projektteams rufen auf zum Mitmachen. So kann man auf der Projektwebseite alle aktuellen Mitmachmöglichkeiten einsehen und mit anpacken. Ein wunderbarer Gedanke – Menschen packen an um sich die Natur zurückzuholen.</p>
+  <p>Aktuell gibt es Bemühungen, diese Landschaft wiederherzustellen und zu vernetzen…</p>
 
-  <p>Mehr Informationen zum Projekt und der Bergischen Heideterrasse findet ihr hier:</p>
+  <p>Mehr Informationen zum Projekt:</p>
   <ul>
     <li><a href="https://www.bergische-heideterrasse.net/" target="_blank">https://www.bergische-heideterrasse.net/</a></li>
-    <li><a href="https://www.bund-nrw.de/moore-renaturieren/der-bergischen-heideterrasse/was-ist-die-bergische-heideterrasse/" target="_blank">https://www.bund-nrw.de/moore-renaturieren/der-bergischen-heideterrasse/was-ist-die-bergische-heideterrasse/</a></li>
+    <li><a href="https://www.bund-nrw.de/moore-renaturieren/der-bergischen-heideterrasse/was-ist-die-bergische-heideterrasse/" target="_blank">https://www.bund-nrw.de/…</a></li>
     <li><a href="https://www.heideterrasse.net/" target="_blank">https://www.heideterrasse.net/</a></li>
   </ul>
 </div>
+
+</body>
+</html>
 
 </body>
 </html>
