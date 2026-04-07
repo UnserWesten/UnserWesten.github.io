@@ -3,36 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <title>Spuren im Schatten - Geschichten zwischen Rhein, Bergischem Land und Eifel</title>
-  <p>
-Von den Bergischen Höhen über die längst vergangenen Heidelandschaften in die Niederrheinische Tiefebene, vom romantischen Mittelrhein bis in die niederländischen Höhen, vom Sauerland bis in die hohe Eifel, ob Sage von Räuberbanden oder Elfen, ob politischer Kamp oder der Einsatz zur Rückkehr der Natur – diese Karte soll euch einen Einblick in die Region um den Rhein und das Bergische Land geben. Taucht ein und holt euch eure Inspiration für das nächste Mikroabenteuer, lernt etwas über eure Gegend oder wie sich Menschen für ihre Zukunft einsetzen.
-</p>
-  <nav>
-  <ul>
-    <li><a href="index.html">Startseite</a></li>
-    <li><a href="projekt1.html">Projekt 1</a></li>
-    <li><a href="projekt2.html">Projekt 2</a></li>
-    <li><a href="projekt3.html">Projekt 3</a></li>
-  </ul>
-</nav>
-  <nav>
-  <ul>
-    <li><a href="index.html">Startseite</a></li>
-    <li><a href="projekt1.html">Projekt 1</a></li>
-    <li><a href="projekt2.html">Projekt 2</a></li>
-    <li><a href="projekt3.html">Projekt 3</a></li>
-  </ul>
-</nav>
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 20px;
+      margin: 0;
+      padding: 0;
+    }
+    nav {
+      background-color: #333;
+      padding: 10px 20px;
+    }
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 0 20px;
     }
     h1 {
       text-align: center;
+      margin-bottom: 20px;
+    }
+    p.intro {
+      text-align: justify;
+      line-height: 1.6;
+      margin-bottom: 30px;
     }
     iframe {
       width: 100%;
-      height: 600px; /* Höhe anpassen, je nach Wunsch */
+      height: 600px;
       border: 1px solid #ccc;
     }
     .fullscreen-link {
@@ -43,20 +58,39 @@ Von den Bergischen Höhen über die längst vergangenen Heidelandschaften in die
   </style>
 </head>
 <body>
-  <h1>Spuren im Schatten – Geschichten zwischen Rhein-Berg</h1>
 
-  <!-- Eingebettete uMap-Karte -->
-  <iframe 
-    src="https://umap.openstreetmap.de/de/map/spuren-im-schatten-geschichten-zwischen-rhein-berg_126928?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=caption&captionBar=false&captionMenus=true" 
-    allowfullscreen
-    allow="geolocation">
-  </iframe>
+  <!-- Menüleiste -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Startseite</a></li>
+      <li><a href="projekt1.html">Projekt 1</a></li>
+      <li><a href="projekt2.html">Projekt 2</a></li>
+      <li><a href="projekt3.html">Projekt 3</a></li>
+    </ul>
+  </nav>
 
-  <!-- Link zur Vollbildanzeige -->
-  <a class="fullscreen-link" 
-     href="https://umap.openstreetmap.de/de/map/spuren-im-schatten-geschichten-zwischen-rhein-berg_126928?scaleControl=false&miniMap=false&scrollWheelZoom=true&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=caption&captionBar=false&captionMenus=true" 
-     target="_blank">
-     Vollbildanzeige der Karte
-  </a>
+  <!-- Inhalt -->
+  <div class="container">
+    <h1>Spuren im Schatten - Geschichten zwischen Rhein, Bergischem Land und Eifel</h1>
+
+    <p class="intro">
+      Von den Bergischen Höhen über die längst vergangenen Heidelandschaften in die Niederrheinische Tiefebene, vom romantischen Mittelrhein bis in die niederländischen Höhen, vom Sauerland bis in die hohe Eifel, ob Sage von Räuberbanden oder Elfen, ob politischer Kamp oder der Einsatz zur Rückkehr der Natur – diese Karte soll euch einen Einblick in die Region um den Rhein und das Bergische Land geben. Taucht ein und holt euch eure Inspiration für das nächste Mikroabenteuer, lernt etwas über eure Gegend oder wie sich Menschen für ihre Zukunft einsetzen.
+    </p>
+
+    <!-- Eingebettete uMap-Karte -->
+    <iframe 
+      src="https://umap.openstreetmap.de/de/map/spuren-im-schatten-geschichten-zwischen-rhein-berg_126928?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=caption&captionBar=false&captionMenus=true" 
+      allowfullscreen
+      allow="geolocation">
+    </iframe>
+
+    <!-- Link zur Vollbildanzeige -->
+    <a class="fullscreen-link" 
+       href="https://umap.openstreetmap.de/de/map/spuren-im-schatten-geschichten-zwischen-rhein-berg_126928?scaleControl=false&miniMap=false&scrollWheelZoom=true&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=caption&captionBar=false&captionMenus=true" 
+       target="_blank">
+       Vollbildanzeige der Karte
+    </a>
+  </div>
+
 </body>
 </html>
