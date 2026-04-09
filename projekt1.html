@@ -50,12 +50,23 @@
     p { text-align: justify; line-height: 1.6; margin-bottom: 20px; font-size: 16px; }
     a { color: #0066cc; }
 
-    .intro-image {
-      float: right;
-      width: 300px;
-      margin: 0 0 5px 20px;
-      border-radius: 8px;
-    }
+    .image-box-right {
+  float: right;
+  width: 300px;
+  margin: 0 0 10px 20px;
+  text-align: center;
+}
+
+.image-box-right img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.image-box-right .caption {
+  font-size: 12px;
+  color: #555;
+  margin-top: 5px;
+}
     .highlight-image {
       display: block;
       margin: 30px auto 5px auto;
@@ -96,8 +107,12 @@
   <h1>Die Bergische Heideterrasse</h1>
 
   <!-- Bild 1 -->
-  <img src="IMG_20260404_160243.jpg" class="intro-image">
-  <div class="caption">Das Teilgebiet Ohligser Heide mit Heidelandschaften mit Moorbirken</div>
+<div class="image-box-right">
+  <img src="IMG_20260404_160243.jpg">
+  <div class="caption">
+    Das Teilgebiet Ohligser Heide mit Heidelandschaften mit Moorbirken
+  </div>
+</div>
 
   <p>Naturnahe Räume sind im Ballungsgebiet Rhein-Ruhr eine wahre Seltenheit. Zwischen den Großstädten Köln, Düsseldorf und Bonn ist wenig Platz um Wildnis noch eine Chance zu geben. So mancher guckt von hier neidisch in Richtung Lausitz oder Alpen, wo inzwischen Biber, Wolf und Geier vorkommen. Doch auch hier in NRW gibt es die Leuchttürme, die Hoffnungsschimmer, die Grünen Oasen.</p>
 
